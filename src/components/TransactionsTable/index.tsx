@@ -18,7 +18,7 @@ export function TransactionsTable() {
     useEffect(() => {
         api.get('transactions')
         .then(response => 
-            setTransactions(response.data)
+            setTransactions(response.data.transactions)
         );
     }, []);
 
@@ -36,10 +36,10 @@ export function TransactionsTable() {
                 <tbody>
                     {transactions.map(transaction => {
                     return(
-                        <tr>
+                        <tr key={transaction.id}>
                             <td>{transaction.title}</td>
-                            <td>R$ {transaction.amount}</td>
-                            <td>{transaction.type}</td>
+                            <td className={transaction.type}>R$ {transaction.amount}</td>
+                            <td>{transaction.category}</td>
                             <td>{transaction.createdAt}</td>
                         </tr>
                     )
