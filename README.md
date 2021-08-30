@@ -2,6 +2,14 @@
 <img src="https://raw.githubusercontent.com/renamcomn/dtmoney/master/src/assets/logo.svg" />
 </p>
 
+<p align="center"> 
+<img src="https://github.com/renamcomn/dtmoney/blob/master/public/screens/main.png?raw=true" />
+</p>
+
+<p align="center"> 
+<img src="https://github.com/renamcomn/dtmoney/blob/master/public/screens/modal.png?raw=true" />
+</p>
+
 # Tecnologia, Hooks e Bibliotecas
 
 <p>Projeto desenvolvido com as seguintes tecnologias:</p>
